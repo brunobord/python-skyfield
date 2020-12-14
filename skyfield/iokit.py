@@ -312,8 +312,7 @@ class Loader(object):
 
         """
         if "finals2000A" in url:
-            # assert False, self._exists(url)
-            pass
+            assert False, (self._exists(url), url)
 
         if '://' not in url:
             path_that_might_be_relative = url
