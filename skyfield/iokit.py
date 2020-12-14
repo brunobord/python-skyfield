@@ -311,6 +311,10 @@ class Loader(object):
         component of the URL.
 
         """
+        if "finals2000A" in url:
+            # assert False, self._exists(url)
+            pass
+
         if '://' not in url:
             path_that_might_be_relative = url
             path = os.path.join(self.directory, path_that_might_be_relative)
